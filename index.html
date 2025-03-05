@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="index.css">
+  <script>
+        
+  </script>
+
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src="fareen.jpg" alt="Profile Picture"> 
+        <h1>Attar farheen</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="remove">Unfriend</button>
+            <button id="add">Add Friend</button>
+        </div> 
+    </div>
+
+    <script>
+        let text = document.querySelector("h5");
+        let addFriend = document.querySelector("#add");
+        let unFriend = document.querySelector("#remove");
+
+        addFriend.addEventListener("click", function(){
+            text.innerHTML = "Friends";
+            text.style.color = "blue";
+        });
+
+        unFriend.addEventListener("click", function(){
+            text.innerHTML = "Stranger";
+            text.style.color = "red";
+        });
+    </script>
+
+    <!-- <script src="./solution.js" onclick=""></script> -->
+</body>
+</html>
